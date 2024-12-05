@@ -1,0 +1,380 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Top Bar */
+.top-bar {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    gap: 50px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 12px;
+}
+
+.top-bar p:hover {
+    color: #0073e6;
+}
+
+.top-bar p {
+    margin: 0 10px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a.active {
+    background-color: #FFB90A8F !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+#logo-text {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    gap: 8px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+#logo-text img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Background Image */
+.background, .about-background {
+    background-image: url("background.png");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    display: block;
+}
+
+/* Buttons */
+#loginBtn, #home-button1, #home-button2 {
+    margin-top: 30px;
+    border-radius: 25px;
+    height: 50px;
+    width: 120px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Shape */
+#shape {
+    width: 100vh;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 125px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Footer */
+.footer {
+    margin-bottom: 0;
+    background-color: rgba(222, 119, 63, 100);
+    color: white;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    padding-bottom: 0;
+    bottom: 0;
+}
+
+#footer-name {
+    margin-top: 10vh;
+    margin-left: 70px;
+    font-size: 60px;
+}
+
+#footer-text {
+    margin-left: 70px;
+    margin-top: 80px;
+    font-size: 15px;
+    font-family: 'DM Sans';
+}
+
+/* Instagram Images */
+#footer-pics img {
+    border-radius: 25px;
+    border: 2px solid #A2DD42;
+    width: 150px;
+    height: 150px;
+}
+
+/* Menu */
+#menu {
+    display: none;
+}
+
+#menu-content {
+    height: 120rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Pages */
+#pages-content {
+    height: 80rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+/* General Heading */
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* --------- RESPONSIVE STYLES --------- */
+
+/* Phone (max-width: 480px) */
+@media (max-width: 480px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home-button1, #home-button2, #loginBtn {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #logo-text {
+        font-size: 30px;
+        margin-right: 0;
+    }
+
+    #shape {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-name {
+        font-size: 30px;
+    }
+
+    #footer-text {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    #footer-pics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    #footer-pics img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #pages-text {
+        padding-left: 10%;
+        font-size: 16px;
+    }
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #loginBtn, #home-button1, #home-button2 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #logo-text {
+        font-size: 35px;
+    }
+
+    #shape {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+
+    #footer-name {
+        font-size: 45px;
+    }
+
+    #footer-text {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    #footer-pics {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    #footer-pics img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #pages-text {
+        padding-left: 15%;
+        font-size: 18px;
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .top-bar {
+        flex-direction: row;
+        padding: 20px 50px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #loginBtn, #home-button1, #home-button2 {
+        width: auto;
+    }
+
+    #logo-text {
+        font-size: 40px;
+    }
+
+    #shape {
+        width: 100vh;
+        height: 60vh;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px;
+    }
+
+    #footer-name {
+        font-size: 60px;
+    }
+
+    #footer-text {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    #footer-pics {
+        display: flex;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    #footer-pics img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #pages-text {
+        padding-left: 25%;
+        font-size: 20px;
+    }
+}

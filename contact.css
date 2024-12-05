@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Adjust spacing and centering */
+#placing,
+#Adress,
+#info,
+#extension,
+#info-contact,
+#person,
+#gmail,
+#mess,
+#sub {
+  margin: 10px 0;
+  max-width: 90%; /* Ensure it doesn't overflow on small screens */
+  position: relative;
+}
+
+#placing, #Adress {
+  left: auto;
+  bottom: auto;
+  margin: 20px auto;
+}
+
+#info {
+  border: 2px solid black;
+  width: 100%; /* Take full width for responsiveness */
+  max-width: 25rem; /* Limit width */
+}
+
+#extension {
+  background-color: gray;
+  width: 100%;
+}
+
+#person,
+#gmail,
+#mess {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 50%; /* Adjust width */
+  margin: 10px auto; /* Center */
+  background-color: white;
+  color: black;
+}
+
+#sub {
+  border-radius: 20px;
+  width: 200px;
+  height: 80px;
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+  margin: 50px auto;
+}
+
+/* Input Fields Styling */
+.contact-container input {
+  border: 2px solid #FF120A;
+  color: #FF120A;
+  width: 100%;
+  max-width: 90%; /* Limit width */
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact-container input::placeholder {
+  color: #FF120A;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  #info,
+  #extension,
+  #person,
+  #gmail,
+  #mess {
+    width: 90%; /* Adjust for smaller screens */
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #sub {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 16px; /* Smaller font size */
+  }
+
+  #person,
+  #gmail,
+  #mess {
+    width: 100%; /* Full width on mobile */
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #sub {
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+  }
+
+  #person,
+  #gmail,
+  #mess {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  input {
+    padding: 8px;
+  }
+  #first-paragraph{
+    margin-left: 1px;
+  }
+  #second-paragraph{
+    margin-left: 10px;
+  }
+  #info p{
+    margin-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  #info-contact{
+    margin-left: 80px;
+  }
+  #contact-img{
+    margin-left: 35px;
+    
+  }
+  #sub{
+    padding-top: 0px;
+
+  }
+ 
+}
